@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  gemini-server:
+    build: .
+    container_name: mse-gemini-server
+    ports:
+      - "9999:9999"
+    environment:
+      - API_SECRET_KEY=change-secret-key-2026
+    restart: unless-stopped
